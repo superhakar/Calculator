@@ -6,5 +6,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: superhakar/Calculator
+        name: superhakar/calculator
         source: pull
