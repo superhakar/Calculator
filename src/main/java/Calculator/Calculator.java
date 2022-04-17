@@ -9,20 +9,24 @@ public class Calculator
     
     public static double squareRoot (double num)
     {
+    	System.out.println("Square root of " + num + " is " + Math.sqrt(num));
         return Math.sqrt(num);
     }
     public static int factorial (int num)
     {
         int fact = 1;
         for(int i=1;i<=num;i++) fact = i*fact;
+        System.out.println("Factorial of " + num + " is " + fact);
         return fact;
     }
     public static double ln (double num)
     {
+    	System.out.println("Natural Log of " + num + " is " + Math.log(num));
         return Math.log(num);
     }
     public static double pow (double num1, double num2)
     {
+        System.out.println(num1 + " power " + num2 + " is " + Math.pow(num1, num2));
         return Math.pow(num1, num2);
     }
     
@@ -33,7 +37,6 @@ public class Calculator
     	System.out.println("Enter number to square root");
         double num = sc.nextDouble();
         double sqrt = squareRoot(num);
-        System.out.println("Square root of " + num + " is " + sqrt);
         logger.info("[SQUARE_ROOT] of " + num + " is " + sqrt);
     }
     public static void factorialScanner (Scanner sc)
@@ -41,7 +44,6 @@ public class Calculator
     	System.out.println("Enter number to get factorial");
         int num = sc.nextInt();
         int fact = factorial(num);
-        System.out.println("Factorial of" + num + " is " + fact);
         logger.info("[FACTORIAL] of " + num + " is " + fact);
     }
     public static void lnScanner (Scanner sc)
@@ -49,7 +51,6 @@ public class Calculator
     	System.out.println("Enter number to get natural log");
         double num = sc.nextDouble();
         double log = ln(num);
-        System.out.println("Natural Log of " + num + " is " + log);
         logger.info("[LOG] of " + num + " is " + log);
     }
     public static void powScanner (Scanner sc)
@@ -58,7 +59,6 @@ public class Calculator
         double num1 = sc.nextDouble();
         double num2 = sc.nextDouble();
         double ans = pow(num1,num2);
-        System.out.println(num1 + "power" + num2 + " is " + ans);
         logger.info("[POWER] of " + num1 + " raised to " + num2 + " is " + ans);
     }
     
