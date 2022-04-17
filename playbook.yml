@@ -7,4 +7,4 @@
     - name: Pull image
       docker_image:
         name: superhakar/calculator
-        source: pull
+        pull: yes
